@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"> 
+      <title>catsaveer</title>
+ <!-- tailwind & daisy Appa -->
+ <Imeage type="imrage" src="(( url_for('static',)))">
+ <link
+ href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+ rel="stylesheet"
+ type="text/css"
+/>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- manrope font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+ href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+ rel="stylesheet"
+/>
+<!-- font awesome -->
+<script
+ src="https://kit.fontawesome.com/5daa8eb347.js"
+ crossorigin="anonymous"
+></script>
+
+<script>
+ tailwind.config = {
+   theme: {
+     extend: {
+       colors: {
+         "para-color": "#13131863",
+         "border-public": "#13131833",
+         "btn-primary": "#FF4240",
+   
+         clifford: "#da373d",
+         primary: "#FF4240",
+         secondary: "#FFFFFF99",
+         border: "#13131880",
+       },
+       backgroundImage: {
+         "section-1":
+           "linear-gradient(rgba(19, 19, 24, 0.50) 50%, rgba(19, 19, 24, 0.50) 50%),url('https://i.ibb.co/tQTckqT/12.jpg')",
+         "section-2":
+           "linear-gradient(rgba(19, 19, 24, 0.50) 50%, rgba(19, 19, 24, 0.50) 50%),url('https://i.ibb.co/3YgXrcr/17.jpg')",
+         "section-3":
+           "linear-gradient(rgba(19, 19, 24, 0.50) 50%, rgba(19, 19, 24, 0.50) 50%),url('https://i.ibb.co/Zm8FXqK/21.jpg')",
+       },
+     },
+   },
+ };
+</script>
+<style>
+ .font-manrope {
+   font-family: "Manrope", sans-serif;
+ }
+</style>
+</head>
+<body class="font-manrope">
+<header class="container mx-auto mt-12">
+ <!-- nav -->
+ <nav>
+   <div class="navbar bg-base-100">
+     <div class="navbar-start">
+       <div class="dropdown">
+         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+           <svg
+             xmlns="http://www.w3.org/2000/svg"
+             class="h-5 w-5"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor"
+           >
+             <path
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               stroke-width="2"
+               d="M4 6h16M4 12h8m-10 6h16"
+             />
+           </svg>
+         </div>
+         <ul
+           tabindex="0"
+           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+         >
+           <li><a>Home</a></li>
+           <li><a>About</a></li>
+           <li><a>Pages</a></li>
+           <li><a>catBlog</a></li>
+           <li><a>Contact</a></li>
+         </ul>
+       </div>
+       <a
+         class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-[#131318] gap-0"
+         >Animal Rescue<span class="text-btn-primary gap-0">’</span>s</a
+       >
+     </div>
+     <div class="navbar-center hidden lg:flex">
+       <ul
+         class="menu menu-horizontal px-1 font-normal gap-11 text-[#424247] text-base"
+       >
+         <li class="text-btn-primary font-bold"><a>Home</a></li>
+         <li><a>About</a></li>
+         <li><a>Pages</a></li>
+         <li><a>catBlog</a></li>
+         <li><a>Contact</a></li>
+       </ul>
+     </div>
+     <div class="navbar-end gap-6">
+       <div class="hidden lg:flex items-center w-6 h-6">
+         <i
+           class="fa-solid fa-magnifying-glass text-[#424247] cursor-pointer"
+         ></i>
+       </div>
+       <a
+         class="bg-btn-primary rounded-lg cursor-pointer px-3 lg:px-6 py-2 lg:py-4 text-white text-lg lg:text-xl font-bold"
+         >contact now</a
+       >
+     </div>
+   </div>
+ </nav>
+ <!-- banner -->
+ <div class="lg:relative">
+   <div class="carousel w-full mt-12">
+     <div id="slide1" class="carousel-item relative w-full">
+       <img url="https://i.ibb.co/jJX9Bjr/banner.jpg" alt="" class=" lg:w-full">
+       <div
+         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+       >
+         <a href="#slide2" class="btn btn-circle">❮</a>
+         <a href="#slide2" class="btn btn-circle">❯</a>
+       </div>
+     </div>
+     <div id="slide2" class="carousel-item relative w-full">
+       <img url="https://i.ibb.co/ZgHTP3p/photo-2024-05-19-15-40-31.jpg" class="w-full" />
+       <div
+         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+       >
+         <a href="#slide1" class="btn btn-circle">❮</a>
+         <a href="#slide1" class="btn btn-circle">❯</a>
+       </div>
+     </div>
+   </div>
+   <div
+     class="bg-[#131318] text-white lg:w-[502px] rounded-xl p-5 mt-4 lg:p-8 lg:absolute bottom-8 right-8 mx-2"
+   >
+     <h3 class="text-lg lg:text-2xl font-extrabold text-white">
+       Meet all the heroes from the field
+     </h3>
+     <p class="font-medium text-[#fff9] mt-4">
+       At Paws of Hope, we believe every animal deserves a second chance at life. Our mission is to rescue, rehabilitate, and rehome animals in need, 
+       ensuring they find loving and forever homes
+     </p>
+   </div>
+ </div>
+</header>
+<main class="container mx-auto">
+ <!-- professional hockeys club -->
+ <section
+   class="text-center mt-24 border-t-2 border-public py-8 border-dashed border-b-2 border-public"
+ >
+   <h2 class="text-2xl lg:text-4xl font-extrabold">Professional Animasl rescue Club</h2>
+   <p class="text-para-color font-medium mt-6 w-auto lg:w-96  mx-auto">
+     At Feline Lifeline, we specialize in rescuing, rehabilitating, and rehoming cats in need. Our professional team is dedicated to ensuring that every cat we encounter has a chance to live a healthy, happy life in a loving home.
+   </p>
+ </section>
+ <!-- progress section -->
+ <div>
+ <section class="mt-12 flex flex-col lg:flex-row lg:justify-between">
+   <!-- card 1-->
+   <div class="card  ">
+    <div class="flex justify-center">
+     <div class="radial-progress text-[#FF4240]" style="--value:87; --size:7rem; --thickness: 0.8rem;" role="progressbar">
+       <span class="text-3xl font-extrabold">87%</span>
+     </div>
+    </div>
+     <div class="card-body">
+       <h2 class="text-center text-xl font-semibold">Pet Facility</h2>
+       <p class="text-center text-para-color "> State-of-the-art  <br>equipped development for players </p>
+
+     </div>
+   </div>
+   <!-- card 2-->
+   <div class="card  ">
+    <div class="flex justify-center">
+     <div class="radial-progress text-[#49D293]" style="--value:95; --size:7rem; --thickness: 0.8rem;" role="progressbar">
+       <span class="text-3xl font-extrabold">95%</span>
+     </div>
+    </div>
+     <div class="card-body">
+       <h2 class="text-center text-xl font-semibold">Pet Coach</h2>
+       <p class="text-center text-para-color ">With decades of  <br>coaching experience .</p>
+
+     </div>
+   </div>
+   <!-- card 3-->
+   <div class="card  ">
+    <div class="flex justify-center">
+     <div class="radial-progress text-[#FFB546]" style="--value:90; --size:7rem; --thickness: 0.8rem;" role="progressbar">
+       <span class="text-3xl font-extrabold">90%</span>
+     </div>
+    </div>
+     <div class="card-body">
+       <h2 class="text-center text-xl font-semibold">Rescue Pet</h2>
+       <p class="text-center text-para-color ">, they continue to be a <br>cornerstone of excellence.</p>
+
+     </div>
+   </div>
+   <!-- card 1-->
+   <div class="card  ">
+    <div class="flex justify-center">
+     <div class="radial-progress text-[#4C8DF1]" style="--value:80; --size:7rem; --thickness: 0.8rem;" role="progressbar">
+       <span class="text-3xl font-extrabold">80%</span>
+     </div>
+    </div>
+     <div class="card-body">
+       <h2 class="text-center text-xl font-semibold">Servibal Ground</h2>
+       <p class="text-center text-para-color ">players engage in rigorous <br>workouts and tactical drills,.</p>
+
+     </div>
+   </div>
+ </section>
+ <!-- program section -->
+ <section class="mt-24 border-dashed border-t-2 border-public pt-8">
+   <h2 class="text-center text-4xl font-extrabold">Program Sections</h2>
+   <p class="font-medium text-center mt-6 lg:w-[607px] mx-auto text-para-color">The program section on our hockey website features a diverse range of initiatives, from youth development camps to community outreach </p>
+ <!-- program image section start -->
+
+ <section class="grid gird-cols-1 lg:grid-cols-2 gap-6 text-white mt-12">
+   <!-- first row col-1  -->
+   <div
+     class="bg-section-1 bg-no-repeat bg-cover rounded-xl px-6 py-10 lg:pt-32"
+   >
+     <h1 class="text-3xl font-extrabold">Animal Rescue Program</h1>
+     <p class="my-4">
+       Our Animal Rescue Program is at the heart of Feline Lifeline’s mission. This program is dedicated to locating, rescuing, and safely transporting cats from harmful or neglectful environments to our facility
+        where they receive immediate care and attention. </p>
+     <button
+       class="btn bg-primary text-xl font-bold text-white hover:bg-black border-none"
+     >
+       Register Now!
+     </button>
+   </div>
+   <!-- first row col-2  -->
+   <div
+     class="bg-section-2 bg-no-repeat bg-cover rounded-xl px-6 py-10 lg:pt-32"
+   >
+     <h1 class="text-3xl font-extrabold">Pet Care Program</h1>
+     <p class="my-4">
+       Our Pet Care Program focuses on providing comprehensive care and rehabilitation to ensure every rescued cat is healthy, happy, and ready for adoption. This program encompasses all aspects of feline well-being, from medical care to behavioral support. </p>
+     <button
+       class="btn bg-primary text-xl font-bold text-white hover:bg-black border-none"
+     >
+       Register Now!
+     </button>
+   </div>
+ </section>
+ <!-- second row  -->
+ <section class="mt-6 text-white">
+   <div
+     class="bg-section-3 bg-no-repeat bg-cover rounded-xl px-6 py-10 lg:pt-32"
+   >
+     <h1 class="text-3xl font-extrabold">Veterinary Center Program</h1>
+     <p class="my-4">
+       Our Veterinary Center Program ensures that all cats under our care receive the highest quality medical treatment. The program operates through our on-site veterinary clinic, staffed by experienced
+        veterinarians and technicians.   </p>
+     <button
+       class="btn bg-primary text-xl font-bold text-white hover:bg-black border-none"
+     >
+       Register Now!
+     </button>
+   </div>
+ </section>
+ <!-- program image section end -->
+   <!-- new products -->
+   <section class="mt-24 border-dashed border-t-2 border-public py-8">
+     <h2 class="text-center text-4xl font-extrabold">Our New Products</h2>
+     <p class="text-center font-medium text-para-color w-auto lg:w-[607px] mx-auto mt-6">DAnnouncing our latest product, a groundbreaking innovation that Highlights key features and benefits. With a commitment to quality and performance, this new addition sets a new standard in
+     </p>
+     <!-- product card -->
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8 border-dashed border-t-2 border-public pt-12">
+     <div class="hero rounded-xl border border-[ #1313181A]">
+       <!-- card 1 -->
+       <div class="hero-content flex-col lg:flex-row">
+         <img url="https://i.ibb.co/P4r9jY0/photo-2024-05-19-15-28-01.jpg" class=" lg:min-w-0 min-w-full" />
+         <div>
+           <div class="flex gap-4">
+             <div class="rating gap-2">
+               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+               <P>5.0</P>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-eye"></i>
+               <p>20</p>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-heart"></i>
+               <p>200</p>
+             </div>
+           </div>
+           <h4 class="text-lg font-extrabold mt-3">Cat jacket</h4>
+           <p class="mt-3 font-medium text-para-color"> "Elevate your cat style with <br>our vibrant red jacket." </p>
+           <div class=" flex gap-5">
+             <h4 class="font-extrabold text-btn-primary">Price - $25.00</h4>
+             <div class="flex items-center gap-2 text-para-color">
+               <i class="fa-solid fa-cart-shopping"></i>
+               <p>Delivery Fee : Free</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!-- card 2 -->
+     </div>
+     <div class="hero  rounded-xl border border-[ #1313181A]">
+       <div class="hero-content flex-col lg:flex-row">
+         <img url="https://i.ibb.co/2yL3dwN/23.jpg" class=" lg:min-w-0 min-w-full" />
+         <div>
+           <div class="flex gap-4">
+             <div class="rating gap-2">
+               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+               <P>5.0</P>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-eye"></i>
+               <p>20</p>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-heart"></i>
+               <p>200</p>
+             </div>
+           </div>
+           <h4 class="text-lg font-extrabold mt-3">Dog Melojack</h4>
+           <p class="mt-3 font-medium text-para-color">The vibrant  <br>enthusiaste with functionality </p>
+           <div class=" flex gap-5">
+             <h4 class="font-extrabold text-btn-primary">Price - $5.00</h4>
+             <div class="flex items-center gap-2 text-para-color">
+               <i class="fa-solid fa-cart-shopping"></i>
+               <p>Delivery Fee : Free</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- card 3 -->
+     <div class="hero  rounded-xl border border-[ #1313181A]">
+       <div class="hero-content flex-col lg:flex-row">
+         <img url="https://i.ibb.co/kKxn6fM/24.jpg" class=" lg:min-w-0 min-w-full" />
+         <div>
+           <div class="flex gap-4">
+             <div class="rating gap-2">
+               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+               <P>5.0</P>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-eye"></i>
+               <p>20</p>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-heart"></i>
+               <p>200</p>
+             </div>
+           </div>
+           <h4 class="text-lg font-extrabold mt-3">Cow Deform</h4>
+           <p class="mt-3 font-medium text-para-color">Our Cow Deform and <br> style,  sleek design. </p>
+           <div class=" flex gap-5">
+             <h4 class="font-extrabold text-btn-primary">Price - $10.00</h4>
+             <div class="flex items-center gap-2 text-para-color">
+               <i class="fa-solid fa-cart-shopping"></i>
+               <p>Delivery Fee : Free</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- card 4 -->
+     <div class="hero  rounded-xl border border-[ #1313181A]">
+       <div class="hero-content flex-col lg:flex-row">
+         <img url="https://i.ibb.co/5LrdBsP/25.jpg" class=" lg:min-w-0 min-w-full" />
+         <div>
+           <div class="flex gap-4">
+             <div class="rating gap-2">
+               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+               <P>5.0</P>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-eye"></i>
+               <p>20</p>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-heart"></i>
+               <p>200</p>
+             </div>
+           </div>
+           <h4 class="text-lg font-extrabold mt-3"> Maroxacin-vet</h4>
+           <p class="mt-3 font-medium text-para-color">Maroxacin-vet <br> with passion and strategy, </p>
+           <div class=" flex gap-5">
+             <h4 class="font-extrabold text-btn-primary">Price - $50.00</h4>
+             <div class="flex items-center gap-2 text-para-color">
+               <i class="fa-solid fa-cart-shopping"></i>
+               <p>Delivery Fee : Free</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- card 4 -->
+     <div class="hero  rounded-xl border border-[ #1313181A]">
+       <div class="hero-content flex-col lg:flex-row">
+         <img url="https://i.ibb.co/JBbfh53/26.jpg" class=" lg:min-w-0 min-w-full" />
+         <div>
+           <div class="flex gap-4">
+             <div class="rating gap-2">
+               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+               <P>5.0</P>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-eye"></i>
+               <p>20</p>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-heart"></i>
+               <p>200</p>
+             </div>
+           </div>
+           <h4 class="text-lg font-extrabold mt-3">Loxicom</h4>
+           <p class="mt-3 font-medium text-para-color">this is Loxicom proffe <br> best sagittis. </p>
+           <div class=" flex gap-5">
+             <h4 class="font-extrabold text-btn-primary">Price - $215.00</h4>
+             <div class="flex items-center gap-2 text-para-color">
+               <i class="fa-solid fa-cart-shopping"></i>
+               <p>Delivery Fee : Free</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- card 10 -->
+     <div class="hero  rounded-xl border border-[ #1313181A]">
+       <div class="hero-content flex-col lg:flex-row">
+         <img url="https://i.ibb.co/mHj9088/27.jpg" class=" lg:min-w-0 min-w-full" />
+         <div>
+           <div class="flex gap-4">
+             <div class="rating gap-2">
+               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+               <P>5.0</P>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-eye"></i>
+               <p>20</p>
+             </div>
+             <div class="flex items-center gap-2">
+               <i class="fa-regular fa-heart"></i>
+               <p>200</p>
+             </div>
+           </div>
+           <h4 class="text-lg font-extrabold mt-3">Flexpet</h4>
+           <p class="mt-3 font-medium text-para-color">it is more Flexpet impotant  <br> be safe </p>
+           <div class=" flex gap-5">
+             <h4 class="font-extrabold text-btn-primary">Price - $20.00</h4>
+             <div class="flex items-center gap-2 text-para-color">
+               <i class="fa-solid fa-cart-shopping"></i>
+               <p>Delivery Fee : Free</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     </div>
+   </section>
+ </section>
+ <!-- clint questions section -->
+ <section class="mt-24  border-dashed border-t-2 border-public py-8">
+   <h2 class="text-center text-4xl font-extrabold">Clients Question</h2>
+   <p class="text-center font-medium text-para-color mt-6 border-dashed border-b-2 border-public pb-8">Heare are some frequent asked question we heared from our clints <br> we think that might help you to know abdout uss</p>
+   <div class="parent flex flex-col lg:flex-row gap-10 border border-public rounded-xl px-6 p-5 mt-8">
+     <div class="c1 w-auto h-auto lg:w-5/12">
+       <img url='https://i.ibb.co/Tg9WHWV/11.png'  alt='11'/>
+     </div>
+     <div class="c2 w-full mt-6 px-1 lg:px-16">
+       <!-- accordion 1 -->
+       <div class="collapse collapse-plus rounded-none border-b-2 border-public">
+         <input type="radio" name="my-accordion-3" checked="checked" /> 
+         <div class="collapse-title text-xl  font-bold">
+           Our Equipment
+         </div>
+         <div class="collapse-content"> 
+           <p class="text-para-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+         </div>
+       </div>
+       <!-- accordion 2 -->
+       <div class="collapse collapse-plus rounded-none border-b-2 border-public">
+         <input type="radio" name="my-accordion-3" /> 
+         <div class="collapse-title text-xl font-bold">
+          Animal Training
+         </div>
+         <div class="collapse-content"> 
+           <p class="text-para-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+         </div>
+       </div>
+       <!-- accordion 3 -->
+       <div class="collapse collapse-plus rounded-none border-b-2 border-public">
+         <input type="radio" name="my-accordion-3" /> 
+         <div class="collapse-title text-xl font-bold">
+           Private Lessons
+         </div>
+         <div class="collapse-content"> 
+           <p class="text-para-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+         </div>
+       </div>
+       <!-- accordion 4 -->
+       <div class="collapse collapse-plus rounded-none border-b-2 border-public">
+         <input type="radio" name="my-accordion-3" /> 
+         <div class="collapse-title text-xl font-bold">
+           Pet Touring
+         </div>
+         <div class="collapse-content"> 
+           <p class="text-para-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+         </div>
+       </div>
+       <!-- accordion 5 -->
+       <div class="collapse collapse-plus rounded-none border-b-2 border-public">
+         <input type="radio" name="my-accordion-3" /> 
+         <div class="collapse-title text-xl font-bold">
+           Booking
+         </div>
+         <div class="collapse-content"> 
+           <p class="para-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+         </div>
+       </div>
+       <!-- accordion 6 -->
+       <div class="collapse collapse-plus rounded-none border-b-2 border-public">
+         <input type="radio" name="my-accordion-3" /> 
+         <div class="collapse-title text-xl font-bold">
+           Pricing
+         </div>
+         <div class="collapse-content"> 
+           <p class="text-para-color">Heare are some frequent asked question we heared from our clints <br> we think that might help you to know abdout uss</p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- get in touch start  -->
+ <div class="text-center my-10 space-y-6">
+   <h1 class="text-4xl font-extrabold">Rescue Cat Get In Touch</h1>
+   <p class="font-medium">
+     "I invite you to fill out the form below to connect with us. Your input is valuable, and we appreciate your engagement. Make sure you have a soft hearted cat for the animal"
+   </p>
+ </div>
+ <div class="border-border h-[1px] border border-dashed"></div>
+
+ <section class="flex flex-col lg:flex-row gap-6 my-10 lg:my-12">
+   <!-- card section start -->
+   <section
+     class="w-full lg:w-[510px] p-6 lg:p-[50px] border-[1px] border-card-border rounded-2xl space-y-4 lg:space-y-6"
+   >
+     <!-- 1st card  -->
+     <div class="bg-[#BCED6D1A] p-8 rounded-2xl">
+       <img
+         url="https://i.ibb.co/wcdpnyG/Group-1171275317.png"
+         alt=""
+         class="w-12 h-12 mb-6"
+       />
+       <p class="text-[#717177] font-normal text-base">Phone Number :</p>
+       <h3 class="font-extrabold text-lg text-[#131318] leading-8">
+         (+88) 123-456-987
+       </h3>
+     </div>
+     <!-- 2nd card  -->
+     <div class="bg-[#FDDD5F1A] p-8 rounded-2xl">
+       <img
+        url="https://i.ibb.co/MDWT3SH/Group-1171275318.png"
+         alt=""
+         class="w-12 h-12 mb-6"
+       />
+       <p class="text-[#717177] font-normal text-base">Email :</p>
+       <h3 class="font-extrabold text-lg text-[#131318] leading-8">
+         animalrescue@support.com
+       </h3>
+     </div>
+     <!-- 3rd card  -->
+     <div class="bg-[#629CF31A] p-8 rounded-2xl">
+       <img
+        url="https://i.ibb.co/ZTm6Qdb/Group-1171275321.png"
+         alt=""
+         class="w-12 h-12 mb-6"
+       />
+       <p class="text-[#717177] font-normal text-base">Location :</p>
+       <h3 class="font-extrabold text-lg text-[#131318] leading-8">
+         152/1 Mohakhali Wireless Gate
+       </h3>
+     </div>
+   </section>
+   <!-- card section end -->
+
+
+    
+
+       
+      <!-- PYTHON Added sectation-->
+
+<!-- form section start -->
+
+<section class="w-full p-2"> 
+  <form action="{{ url_for('process_message') }}" method="POST">
+  <div class="flex flex-col lg:flex-row gap-5 lg:gap-6">
+    <div class="w-full"><label for="name">
+      <h1 class="text-xl text-[#131318] font-bold mb-4">Your Name</h1>
+      </label><input  type="text" id="name" name="name" required
+        class="p-5 w-full bg-[#13131808] rounded-xl"
+        type="text"
+        placeholder="Enter your full name"
+      />
+    </div>
+    <div class="w-full"> <label for="email">
+      <h1 class="text-xl text-[#131318] font-bold mb-4">Your Email</h1></label>
+      <input type="email" id="email" name="email" required
+        class="p-5 w-full bg-[#13131808] rounded-xl"
+        type="email"
+        placeholder="Enter your email"
+      />
+    </div>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-5 lg:gap-6 my-5 lg:my-6">
+    <div class="w-full"> <label for="subject">
+      <h1 class="text-xl text-[#131318] font-bold mb-4">Subject</h1></label>
+      <input type="text" id="subject" name="subject" required
+        class="p-5 w-full bg-[#13131808] rounded-xl"
+        type="text"
+        placeholder="Enter your subject"
+      />
+    </div>
+    <div class="w-full"> <label for="phone">
+      <h1 class="text-xl text-[#131318] font-bold mb-4">
+        Phone Number
+      </h1></label>
+      <input type="tel" id="phone" name="phone"
+        class="p-5 w-full bg-[#13131808] rounded-xl"
+        type="number"
+        placeholder="Enter your phone number"
+      />
+    </div>
+  </div>
+
+  <div class=""> <label for="message">
+    <h1 class="text-xl text-[#131318] font-bold mb-4">Message</h1></label>
+    <textarea id="message" name="message" rows="5" required 
+      class="p-8 w-full h-[200px] lg:h-[355px] bg-[#13131808] rounded-xl"
+      placeholder="Write your message"
+    ></textarea>
+  </div>
+
+  <button type="submit"
+    class="mt-6 lg:mt-8 w-full py-4 bg-primary rounded-xl text-xl font-bold text-[#FFF]"
+  >
+    Send Message
+  </button>
+{% if message_sent %}
+    <p>Your message has been sent successfully!</p>
+{% endif %}
+</form>
+</section>
+
+<!-- form section end -->
+</section>
+<!-- get in touch end -->
+<!-- social icon -->
+<div class="bg-[#13131808] w-full rounded-xl text-center mt-12">
+  <h4 class="text-center text-2xl font-extrabold pt-9">Social Media</h4>
+  <ul class="flex justify-center gap-5 py-6">
+    <li class="text-xl"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+    <li class="text-xl"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+    <li class="text-xl"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+    <li class="text-xl"><a href=""><i class="fa-brands fa-github"></i></a></li>
+  </ul>
+</div>
+</section>
+</main>
+ <!-- footer -->
+ <footer class="mt-24 bg-[#131318] py-24">
+  <div
+    class="flex flex-col lg:flex-row lg:justify-between px-10 lg:px-36"
+  >
+    <div class="text-center lg:text-left">
+      <h3 class="text-3xl font-extrabold text-[#fff]">Get In Touch</h3>
+      <p class="w-80 font-medium mt-4 mb-6 text-[#fff9]">
+        "If you have any remaining questions or concerns, please visit our 'Contact Us' section for further assistance.
+         We're here to help and look forward to connecting with you." Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
+        dolor. Purus urna in sit nullam proin.
+      </p>
+      <div class="flex items-center gap-4 mb-4 text-[#fff9] justify-center lg:justify-start">
+        <i class="fa-solid fa-envelope text-btn-primary"></i>
+        <p>animalrescue@support.com</p>
+      </div>
+      <div class="flex items-center gap-4 text-[#fff9] justify-center lg:justify-start">
+        <i class="fa-solid fa-phone text-btn-primary"></i>
+        <p>(+88) 123-456-987</p>
+      </div>
+    </div>
+    <!-- two in one -->
+    <div class="flex gap-12 lg:gap-96 justify-center mt-10 lg:mt-0">
+    <div>
+      <h3 class="text-d font-bold mb-7 text-white">Company</h3>
+      <ul class="leading-10 text-[#fff9]">
+        <li>About us</li>
+        <li>Leadership</li>
+        <li>Careers</li>
+        <li>News & Article</li>
+        <li>Legal Notice</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-bold mb-7 text-white">Support</h3>
+      <ul class="leading-10 text-[#fff9]">
+        <li>Help Center</li>
+        <li>FAQ</li>
+        <li>Ticket Support</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  </div>
+    <div class="text-center lg:text-left mt-12 lg:mt-0">
+      <h3 class="text-lg font-bold mb-7 text-white">Services</h3>
+      <ul class="leading-10 text-[#fff9]">
+        <li>Academy</li>
+        <li>Group Lesson</li>
+        <li>Privet Lesson</li>
+        <li>Hockeys for kids</li>
+        <li>Hockeys for adult</li>
+      </ul>
+    </div>
+  </div>
+</footer> 
+</body>
+</html>
